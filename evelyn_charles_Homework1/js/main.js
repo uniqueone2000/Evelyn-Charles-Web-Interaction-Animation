@@ -13,39 +13,6 @@ HTML5 Shape Drawing Activity
      
 ********************************************/
 
-window.onload = function(){
-	var canvases = document.getElementById("myCanvas1");
-	if(canvases && canvases.getContext){
-
-		var ctx = canvases.getContext("2d");
-		if(ctx){
-
-			// Array of problems
-			var problems = ["problem1", "problem2", "problem3", "problem4", "problem5", "problem6", "problem7"];
-
-			
-			// Array of objects
-			var objects = [
-							{x: 0, y: 0, width: 50, height: 100},
-							{},
-							{},
-							{},
-							{},
-							{},
-							{}
-						  ];
-
-			// For Loop to set context on all canvases
-			for(var i = 0; i < problems.length; i++){
-
-				// Determines each canvas
-				var cnvName = "myCanvas" + (i + 1);
-				var crtCnvs = document.getElementById(cnvName);
-				var crtCtx = crtCnvs.getContext("2d");
-
-
-	
-
 /*******************************************
 FILE SETUP
 
@@ -68,10 +35,23 @@ Reminder - set the style first then draw.
 ********************************************/
 
 //Draw Rectangle here
+window.onload = function(){
+	var cnv1 = document.getElementById("myCanvas1");
 
-crtCtx.fillStyle = "blue";
-crtCtx.strokeSytle = "#000";
-crtCtx.strokeRect(0, 0, 50, 100);
+	if(cnv1 && cnv1.getContext){
+		var ctx = cnv1.getContext("2d");
+
+		if(ctx){
+			ctx.strokeSytle = "#000";
+			ctx.fillStyle = "blue"
+			ctx.lineWidth = 5;
+
+			ctx.strokeRect(0, 0, 50, 100);
+			ctx.fillRect(0, 0, 50, 100);
+		}
+	}
+}
+
 
 /*******************************************
 PART 2
@@ -87,8 +67,25 @@ Use the arc method
 
 
 //Draw Circle here
+	var cnv2 = document.getElementById("myCanvas2");
 
+	if(cnv2 && cnv2.getContext){
+		var ctx2 = cnv2.getContext("2d");
 
+		if(ctx2){
+			ctx2.strokeSytle = "#000";
+			ctx2.fillStyle = "rgba(255, 0, 0, .5)";
+			ctx2.lineWidth = 5;
+
+			var degrees = 360;
+			var radians = (degrees/180 * Math.PI);
+
+			ctx2.beginPath();
+			ctx2.arc(50, 50, 20, 0, radians);
+			ctx2.fill();
+			ctx2.stroke();
+		}
+	}
 
 
 /*******************************************
@@ -104,7 +101,16 @@ Height and width and color are up to you.
 
 
 //Draw Star here
+	var cnv3 = document.getElementById("myCanvas3");
 
+	if(cnv3 && cnv3.getContext){
+		var ctx3 = cnv3.getContext("2d");
+
+		if(ctx3){
+			ctx3.beginPath();
+			
+		}
+	}
 
 /*******************************************
 PART 4
@@ -160,7 +166,3 @@ You must use at least 3 different methods.
 
 // Draw scene here
 
-			}
-		}
-	}
-}

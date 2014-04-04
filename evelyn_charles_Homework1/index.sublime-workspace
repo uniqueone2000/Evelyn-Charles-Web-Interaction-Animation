@@ -1,0 +1,231 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"stro",
+				"stroke"
+			],
+			[
+				"be",
+				"bezierCurveTo"
+			],
+			[
+				"str",
+				"stroke"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"stroke",
+				"strokeStyle"
+			],
+			[
+				"Canv",
+				"Canvas1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 387.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rea",
+				"ReadmePlease"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Add Channel"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"readme",
+				"ReadmePlease"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 342.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/26 Web Interaction & Animation/Evelyn-Charles-Web-Interaction-Animation/evelyn_charles_Homework1/index.html",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/26 Web Interaction & Animation/Week 1/Modernizr/1-Starting/js/example1.js",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/26 Web Interaction & Animation/Week 1/HTML5 Canvas/1-Starting/7-Text-working.htm",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/26 Web Interaction & Animation/Week 1/HTML5 Canvas/1-Starting/js/Curves.js",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/26 Web Interaction & Animation/Week 1/HTML5 Canvas/1-Starting/6-Curves-working.htm",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/25 Front-End Web Frameworks/Week 1/Grocery List Assignment/index.html",
+		"/Users/theuniqueone2000/Documents/Web Design/UONLLC/UNIQUEONE2000_NET/index.html",
+		"/Users/theuniqueone2000/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/index.html",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/22 Programming for Web Applications II/Week 1/Milestone 4 -  Assignment Prototype/FollowAlong/index.html",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/22 Programming for Web Applications II/Week 1/Milestone 4 -  Assignment Prototype/FollowAlong/index",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/22 Programming for Web Applications II/_Template_1211/index.html",
+		"/Users/theuniqueone2000/Documents/FULL SAIL COURSES/22 Programming for Web Applications II/Charles-Evelyn-PWA2/WK 1/README.md",
+		"/Users/theuniqueone2000/Library/Application Support/Sublime Text 3/Packages/SideBarEnhancements/CHANGELOG"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hide",
+			"body",
+			"modal",
+			"form",
+			"legend"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 40.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 138.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
