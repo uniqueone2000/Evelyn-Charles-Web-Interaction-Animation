@@ -107,8 +107,25 @@ Height and width and color are up to you.
 		var ctx3 = cnv3.getContext("2d");
 
 		if(ctx3){
+			ctx3.strokeSytle = "green";
+			ctx3.fillStyle = "#F00";
+			ctx3.lineWidth = 3;
+
 			ctx3.beginPath();
-			
+			ctx3.moveTo(100, 100);
+			ctx3.lineTo(120, 40);
+			ctx3.lineTo(140, 100);
+			ctx3.lineTo(190, 100);
+			ctx3.lineTo(150, 130);
+			ctx3.lineTo(170, 180);
+			ctx3.lineTo(120, 140);
+			ctx3.lineTo(80, 180);
+			ctx3.lineTo(95, 130);
+			ctx3.lineTo(60, 100);
+			ctx3.closePath();
+			ctx3.fill();
+			ctx3.stroke();
+
 		}
 	}
 
