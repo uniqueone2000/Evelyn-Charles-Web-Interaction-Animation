@@ -108,7 +108,7 @@ Height and width and color are up to you.
 
 		if(ctx3){
 			ctx3.strokeSytle = "green";
-			ctx3.fillStyle = "#F00";
+			ctx3.fillStyle = "#0F0";
 			ctx3.lineWidth = 3;
 
 			ctx3.beginPath();
@@ -142,6 +142,57 @@ Do not overlap any other object.
 ********************************************/
 
 //Draw Umbrella top here
+	var cnv4 = document.getElementById("myCanvas4");
+
+	if(cnv4 && cnv4.getContext){
+		var ctx4 = cnv4.getContext("2d");
+		var	ctx5 = cnv4.getContext("2d");
+		var ctx6 = cnv4.getContext("2d");
+		var ctx7 = cnv4.getContext("2d");
+
+		if(ctx4 && ctx5 && ctx6 && ctx7){
+			ctx4.strokeSytle = "green";
+			ctx4.fillStyle = "#228B22";
+			ctx4.lineWidth = 3;
+			
+
+			ctx5.strokeSytle = "green";
+			ctx5.fillStyle = "#228B22";
+			ctx5.lineWidth = 3;
+
+			ctx6.strokeSytle = "green";
+			ctx6.fillStyle = "#228B22";
+			ctx6.lineWidth = 3;
+
+			ctx7.strokeSytle = "green";
+			ctx7.fillStyle = "#228B22";
+			ctx7.lineWidth = 3;
+
+			ctx4.beginPath();
+			ctx4.arc(125, 120, 80, 2 * Math.PI, 1 * Math.PI, true);
+
+			ctx4.stroke();
+
+			ctx5.beginPath();
+			ctx5.moveTo(46, 120);
+			ctx5.bezierCurveTo(67, 95, 78, 95, 98, 120);
+
+			ctx5.stroke();
+
+			ctx6.beginPath();
+			ctx6.moveTo(98, 120);
+			ctx6.bezierCurveTo(108, 95, 138, 95, 148, 120);
+
+			ctx6.stroke();
+
+			ctx7.beginPath();
+			ctx7.moveTo(148, 120);
+			ctx7.bezierCurveTo(165, 95, 198, 95, 205, 120);
+
+			ctx7.stroke();
+		}
+	}
+
 
 /*******************************************
 PART 5
