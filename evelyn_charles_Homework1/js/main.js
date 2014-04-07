@@ -244,8 +244,88 @@ Reminder to use the drawImage method for all 3 of the ways.
 ********************************************/
 
 //Draw images here
+var cnv6 = document.getElementById("myCanvas6");
+	
+	if(cnv6 && cnv6.getContext){
+			var ctx9 = cnv6.getContext("2d");
+			var ctx10 = cnv6.getContext("2d");
+			var ctx11 = cnv6.getContext("2d");
+			var ctx12 = cnv6.getContext("2d");
+			var ctx13 = cnv6.getContext("2d");
+			var ctx14 = cnv6.getContext("2d");
+			var ctx15 = cnv6.getContext("2d");
+			var ctx16= cnv6.getContext("2d");
+			var ctx17 = cnv6.getContext("2d");
+			var ctx18 = cnv6.getContext("2d");
+			var ctx19 = cnv6.getContext("2d");
+			var ctx20 = cnv6.getContext("2d");
+			var ctx21 = cnv6.getContext("2d");
+			var ctx22 = cnv6.getContext("2d");
+			var ctx23 = cnv6.getContext("2d");
 
+			
+			if(ctx9 && ctx10){
+				var myString = "Web Interaction";
+				var myString2 = "&";
+				var myString3 = "Animation";
 
+			ctx9.font = "25pt Bauhaus93";
+			ctx9.fillStyle = "#000";
+			ctx9.fillText(myString, 10, 30);
+
+			ctx10.font = "27pt Bauhaus93";
+			ctx10.fillStyle = "#F00";
+			ctx10.strokeSytle = "#000";
+			ctx10.lineWidth = 3;
+			ctx10.strokeText(myString2, 8, 64);
+			ctx10.fillText(myString2, 8, 65);
+
+			ctx11.font = "29pt Bauhaus93";
+			ctx11.fillStyle = "#000";
+			ctx11.fillText(myString3, 35, 65);
+
+			ctx11.strokeSytle = "#000";
+			ctx11.fillStyle = "#F00";
+			ctx11.lineWidth = 1;
+
+			// Variables for the "Bubbles"
+			var degrees = 360;
+			var radians = (degrees/180 * Math.PI);
+
+			ctx11.beginPath();
+			ctx11.arc(204, 9, 3, 0, radians);
+			ctx11.fill();
+			ctx11.stroke();
+
+			ctx11.strokeSytle = "#000";
+			ctx11.fillStyle = "#F00";
+			ctx11.lineWidth = 1;
+
+			ctx12.beginPath();
+			ctx12.arc(85, 40, 4, 0, radians);
+			ctx12.fill();
+			ctx12.stroke();
+
+			ctx12.strokeSytle = "#000";
+			ctx12.fillStyle = "#F00";
+			ctx12.lineWidth = 1;
+
+			ctx12.beginPath();
+			ctx12.arc(162, 40, 4, 0, radians);
+			ctx12.fill();
+			ctx12.stroke();
+
+			ctx12.strokeSytle = "#000";
+			ctx12.fillStyle = "#F00";
+			ctx12.lineWidth = 1;
+
+			// Variable for the pointer image
+			var img1 = document.getElementById("hand");
+			console.log("img1");
+
+			ctx13.drawImage(img1, 100, 100, 50, 50);
+		}
+	}
 
 /*******************************************
 PART 7
