@@ -264,10 +264,13 @@ var cnv6 = document.getElementById("myCanvas6");
 			var ctx23 = cnv6.getContext("2d");
 
 			
-			if(ctx9 && ctx10){
+			if(ctx9 && ctx10 && ctx13){
 				var myString = "Web Interaction";
 				var myString2 = "&";
 				var myString3 = "Animation";
+				
+				// Variable for the pointer image
+				var img1 = document.getElementById("hand");
 
 			ctx9.font = "25pt Bauhaus93";
 			ctx9.fillStyle = "#000";
@@ -318,12 +321,21 @@ var cnv6 = document.getElementById("myCanvas6");
 			ctx12.strokeSytle = "#000";
 			ctx12.fillStyle = "#F00";
 			ctx12.lineWidth = 1;
+			
+			ctx13.drawImage(img1, 0, 0, 100, 50);
 
-			// Variable for the pointer image
-			var img1 = document.getElementById("hand");
-			console.log("img1");
+			ctx14.beginPath();
+			ctx14.lineWidth = 3;
+			ctx14.moveTo(90, 35);
+			ctx14.quadraticCurveTo(100, 25, 105, 35);
+			ctx14.stroke();
+			ctx14.fill();
 
-			ctx13.drawImage(img1, 100, 100, 50, 50);
+			ctx14.beginPath();
+			ctx14.moveTo(90, 35);
+			ctx14.quadraticCurveTo(100, 45, 105, 35);
+			ctx14.stroke();
+			ctx14.fill();
 		}
 	}
 
