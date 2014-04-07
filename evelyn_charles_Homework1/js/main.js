@@ -71,11 +71,17 @@ Use the arc method
 
 	if(cnv2 && cnv2.getContext){
 		var ctx2 = cnv2.getContext("2d");
+		var ctx2b = cnv2.getContext("2d");
 
-		if(ctx2){
+
+		if(ctx2 && ctx2b){
 			ctx2.strokeSytle = "#000";
 			ctx2.fillStyle = "rgba(255, 0, 0, .5)";
 			ctx2.lineWidth = 5;
+
+			ctx2b.strokeSytle = "#000";
+			ctx2b.fillStyle = "rgba(255, 0, 0, .5)";
+			ctx2b.lineWidth = 5;
 
 			var degrees = 360;
 			var radians = (degrees/180 * Math.PI);
@@ -83,6 +89,11 @@ Use the arc method
 			ctx2.beginPath();
 			ctx2.arc(50, 50, 20, 0, radians);
 			ctx2.fill();
+			ctx2.stroke();
+
+			ctx2b.beginPath();
+			ctx2b.arc(50, 50, 30, 0, radians);
+
 			ctx2.stroke();
 		}
 	}
@@ -203,6 +214,21 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 ********************************************/
 
 //Draw text here
+	var cnv5 = document.getElementById("myCanvas5");
+
+		if(cnv5 && cnv5.getContext){
+			var ctx8 = cnv5.getContext("2d");
+			
+			if(ctx8){
+				var myString = 
+				"Many videos to watch here";
+
+			ctx8.font = "15pt Arial" ;
+			ctx8.fillStyle = "#A90329";
+			ctx8.fillText(myString, 5, 100);
+		}
+	}
+
 
 /*******************************************
 PART 6
