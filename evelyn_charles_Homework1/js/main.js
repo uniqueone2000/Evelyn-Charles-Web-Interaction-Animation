@@ -201,8 +201,9 @@ Do not overlap any other object.
 			ctx7.bezierCurveTo(165, 95, 198, 95, 205, 120);
 
 			ctx7.stroke();
+		
+			}
 		}
-	}
 
 
 /*******************************************
@@ -226,8 +227,9 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 			ctx8.font = "15pt Arial" ;
 			ctx8.fillStyle = "#A90329";
 			ctx8.fillText(myString, 5, 100);
+			
+			}
 		}
-	}
 
 
 /*******************************************
@@ -244,100 +246,23 @@ Reminder to use the drawImage method for all 3 of the ways.
 ********************************************/
 
 //Draw images here
-var cnv6 = document.getElementById("myCanvas6");
-	
-	if(cnv6 && cnv6.getContext){
+	var cnv6 = document.getElementById("myCanvas6");
+
+		if(cnv6 && cnv6.getContext){
 			var ctx9 = cnv6.getContext("2d");
-			var ctx10 = cnv6.getContext("2d");
-			var ctx11 = cnv6.getContext("2d");
-			var ctx12 = cnv6.getContext("2d");
-			var ctx13 = cnv6.getContext("2d");
-			var ctx14 = cnv6.getContext("2d");
-			var ctx15 = cnv6.getContext("2d");
-			var ctx16= cnv6.getContext("2d");
-			var ctx17 = cnv6.getContext("2d");
-			var ctx18 = cnv6.getContext("2d");
-			var ctx19 = cnv6.getContext("2d");
-			var ctx20 = cnv6.getContext("2d");
-			var ctx21 = cnv6.getContext("2d");
-			var ctx22 = cnv6.getContext("2d");
-			var ctx23 = cnv6.getContext("2d");
 
-			
-			if(ctx9 && ctx10 && ctx13){
-				var myString = "Web Interaction";
-				var myString2 = "&";
-				var myString3 = "Animation";
-				
-				// Variable for the pointer image
-				var img1 = document.getElementById("hand");
+			if(ctx9){
 
-			ctx9.font = "25pt Bauhaus93";
-			ctx9.fillStyle = "#000";
-			ctx9.fillText(myString, 10, 30);
+				var srcImg = document.getElementById("theImage");
+				//console.log(srcImg);
 
-			ctx10.font = "27pt Bauhaus93";
-			ctx10.fillStyle = "#F00";
-			ctx10.strokeSytle = "#000";
-			ctx10.lineWidth = 3;
-			ctx10.strokeText(myString2, 8, 64);
-			ctx10.fillText(myString2, 8, 65);
+				//ctx9.drawImage(srcImg, 0, 0);
 
-			ctx11.font = "29pt Bauhaus93";
-			ctx11.fillStyle = "#000";
-			ctx11.fillText(myString3, 35, 65);
+				// ctx9.drawImage(srcImg, 5, 5, 150, 180);
 
-			ctx11.strokeSytle = "#000";
-			ctx11.fillStyle = "#F00";
-			ctx11.lineWidth = 1;
-
-			// Variables for the "Bubbles"
-			var degrees = 360;
-			var radians = (degrees/180 * Math.PI);
-
-			ctx11.beginPath();
-			ctx11.arc(204, 9, 3, 0, radians);
-			ctx11.fill();
-			ctx11.stroke();
-
-			ctx11.strokeSytle = "#000";
-			ctx11.fillStyle = "#F00";
-			ctx11.lineWidth = 1;
-
-			ctx12.beginPath();
-			ctx12.arc(85, 40, 4, 0, radians);
-			ctx12.fill();
-			ctx12.stroke();
-
-			ctx12.strokeSytle = "#000";
-			ctx12.fillStyle = "#F00";
-			ctx12.lineWidth = 1;
-
-			ctx12.beginPath();
-			ctx12.arc(162, 40, 4, 0, radians);
-			ctx12.fill();
-			ctx12.stroke();
-
-			ctx12.strokeSytle = "#000";
-			ctx12.fillStyle = "#F00";
-			ctx12.lineWidth = 1;
-			
-			ctx13.drawImage(img1, 0, 0, 100, 50);
-
-			ctx14.beginPath();
-			ctx14.lineWidth = 3;
-			ctx14.moveTo(90, 35);
-			ctx14.quadraticCurveTo(100, 25, 105, 35);
-			ctx14.stroke();
-			ctx14.fill();
-
-			ctx14.beginPath();
-			ctx14.moveTo(90, 35);
-			ctx14.quadraticCurveTo(100, 45, 105, 35);
-			ctx14.stroke();
-			ctx14.fill();
+				ctx9.drawImage(srcImg, 200, 200, 10, 20, 100, 100, 50, 50);
+			}
 		}
-	}
 
 /*******************************************
 PART 7
@@ -351,4 +276,127 @@ You must use at least 3 different methods.
 ********************************************/
 
 // Draw scene here
+	var cnv7 = document.getElementById("myCanvas7");
+
+		if(cnv6 && cnv6.getContext){
+			var ctx10 = cnv7.getContext("2d");
+			var ctx10b = cnv7.getContext("2d");
+			var ctx11 = cnv7.getContext("2d");
+			var ctx11b = cnv7.getContext("2d");
+			var ctx12 = cnv7.getContext("2d");
+			var ctx12b = cnv7.getContext("2d");
+			var ctx12c = cnv7.getContext("2d");
+			var ctx13 = cnv7.getContext("2d");
+			var ctx14 = cnv7.getContext("2d");
+			var ctx15 = cnv7.getContext("2d");
+			var ctx16 = cnv7.getContext("2d");
+		
+
+			if(ctx10 && ctx10b && ctx11 && ctx11b && ctx12 
+				&& ctx12b && ctx12c && ctx13 && ctx14 && ctx15 && ctx16){
+				
+				ctx10.strokeSytle = "#000";
+				ctx10.lineWidth = 3;
+
+				ctx10b.strokeSytle = "#000"
+				ctx10b.fillStyle = "#228B22";
+				ctx10b.lineWidth = 1;
+
+				ctx11.strokeSytle = "green";
+				ctx11.fillStyle = "#228B22";
+				ctx11.lineWidth = 3;
+
+				ctx11b.strokeSytle = "green";
+				ctx11b.fillStyle = "#228B22";
+				ctx11b.lineWidth = 1;
+
+				ctx12.strokeSytle = "#000";
+				ctx12.fillStyle = "#228B22";
+				ctx12.lineWidth = 3;
+
+				ctx12b.strokeSytle = "#000";
+				ctx12b.fillStyle = "#228B22";
+				ctx12b.lineWidth = 3;
+
+				ctx12c.strokeSytle = "#000";
+				ctx12c.fillStyle = "#228B22";
+				ctx12c.lineWidth = 3;
+
+				ctx13.strokeSytle = "green";
+				ctx13.fillStyle = "#8B7765";
+				ctx13.lineWidth = 3;
+
+				// Mountains
+				ctx13.beginPath();
+				ctx13.moveTo(0, 90);
+				ctx13.bezierCurveTo(60, 115, 90, 25, 250, 90);
+				ctx13.fill();
+				//ctx13.stroke();
+
+				var myString2 = "Wheelie!!!";
+				ctx14.font = "15pt Arial" ;
+				ctx14.fillStyle = "#A90329";
+				ctx14.fillText(myString2, 125, 30);
+
+				var degrees = 360;
+				var radians = (degrees/180 * Math.PI);
+
+				// Wheels
+				ctx10.beginPath();
+				ctx10.arc(50, 170, 20, 0, radians);
+				ctx10.stroke();
+
+				ctx10b.beginPath();
+				ctx10b.arc(50, 170, 13, 0, radians);
+				ctx10b.stroke();
+				ctx10b.fill();
+
+				ctx11.beginPath();
+				ctx11.arc(137, 110, 20, 0, radians);
+				ctx11.stroke();
+
+				ctx11b.beginPath();
+				ctx11b.arc(137, 110, 13, 0, radians);
+				ctx11b.stroke();
+				ctx11b.fill();
+
+				// Frame and forks
+				ctx12.beginPath();
+				ctx12.moveTo(55, 140);
+				ctx12.lineTo(85, 160);
+				ctx12.lineTo(113, 137);
+				ctx12.lineTo(105, 97);
+
+				ctx12.closePath();
+				ctx12.stroke();
+
+				ctx12b.beginPath();
+				ctx12b.moveTo(68, 150);
+				ctx12b.lineTo(50, 170);
+				ctx12b.stroke();
+
+				ctx12c.beginPath();
+				ctx12c.moveTo(107, 112);
+				ctx12c.lineTo(138, 110);
+				ctx12c.stroke();
+
+				/*
+				ctx15.strokeSytle = "green";
+				ctx15.fillStyle = "#228B22";
+				ctx15.lineWidth = 3;
+
+				ctx16.strokeSytle = "green";
+				ctx16.fillStyle = "#228B22";
+				ctx16.lineWidth = 3;
+				*/
+				
+
+				
+
+			}
+
+	}
+
+
+
 
