@@ -245,6 +245,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', end
 	border-radius: 2px;
 }
 
+section h2 {
+	text-shadow: 0.125em 0.125em 0.125em #000;
+}
+
 article {
 	width: 45%;
 	margin: 10px;
