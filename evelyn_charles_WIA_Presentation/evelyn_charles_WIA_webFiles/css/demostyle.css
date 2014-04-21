@@ -57,16 +57,13 @@ body {
 	width: 960px;
 	margin: auto auto;
 	padding: 10px;
-	color: ;
 	background: url("../images/metaltextures032.png") repeat;
-	border: ;
 }
 
 header {
 	width: /*940px*/ 100%;
 	margin: 5px auto;
 	padding: 5px;
-	color: ;
 background: #7d7e7d; /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkN2U3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZTBlMGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -129,20 +126,18 @@ header h1 img {
 	width: 320px;
 	height: 125px;
 	margin: 1px 0px 5px 0;
-	padding: ;
-	color: ;
-	background: ;
-	border: ;
 	float: left;
 }
 
 .upperControlBar {
+	/*
 	width: ;
 	margin: ;
 	padding: ;
 	color: ;
 	background: ;
 	border: ;
+	*/
 }
 
 #contentWrapper {
@@ -158,7 +153,6 @@ nav {
 	width: 540px;
 	margin: 0 auto;
 	padding: 0 5px;
-	color: ;
 	background: none;
 	overflow: hidden;
 	float: right;
@@ -169,18 +163,11 @@ nav ul {
 	width: 530px;
 	margin: auto auto;
 	padding: 0 5px;
-	color: ;
-	background: ;
-	border: ;
 }
 
 nav ul li {
 	width: 117px;
-	margin: ;
 	padding: 0 5px;
-	color: ;
-	background: ;
-	border: ;
 	display: inline;
 	float: left;
 	text-align: center;
@@ -188,12 +175,14 @@ nav ul li {
 }
 
 nav ul li a {
+	/*
 	width: ;
 	margin: ;
 	padding: ;
 	color: ;
 	background: ;
 	border: ;
+	*/
 	text-decoration: none;
 }
 
@@ -215,10 +204,8 @@ nav ul li a:active {
 
 aside {
 	width: 290px;
-	margin: ;
 	padding: 10px;
 	color: #FFF;
-	border: ;
 	float: left;
 	border-radius: 2px;
 	background: #1485CC;
@@ -227,7 +214,6 @@ aside {
 
 section {
 	width: 620px;
-	margin: ;
 	padding: 10px;
 	color: #FFF;
 background: #7d7e7d; /* Old browsers */
@@ -284,7 +270,6 @@ footer {
 	padding: 5px 10px;
 	color: #FFF;
 	background: #000;
-	border: ;
 	border-radius: 2px;
 	text-shadow: 2px 2px 3px #000;
 	border-radius: 2px;
@@ -296,11 +281,8 @@ footer {
 
 form {
 	width: 270px;
-	margin: ;
 	padding: 5px;
-	color: ;
 	background: #000;
-	border: ;
 	border-radius: 4px;
 	overflow: hidden;
 }
@@ -319,10 +301,6 @@ select {
 	width: 250px;
 	margin: 10px;
 	height: 1.5em;
-	padding: ;
-	color: ;
-	background: ;
-	border: ;
 	display: block;
 }
 
@@ -342,8 +320,6 @@ form input[type = text], [type = email], [type = tel] {
 	height: 1.5em;
 	margin: 5px 10px 10px;
 	padding: 0 0.500em;
-	background: ;
-	color: ;
 	font: normal 1em Arial, sans-serif;
 	border: none;
 	border-radius: 2px;
@@ -405,9 +381,6 @@ video {
 	width: 278px;
 	height: 170px;
 	margin: 0 auto;
-	padding: ;
-	color: ;
-	background: ;
 	border: 1px solid silver;
 	border-radius: 2px;
 }
