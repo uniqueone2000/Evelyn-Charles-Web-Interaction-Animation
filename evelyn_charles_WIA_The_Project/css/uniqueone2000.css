@@ -1,0 +1,184 @@
+/*  << << << << || CSS FOR  UNIQUEONE2000.NET (23 FEB, 2014) || >> >> >> >> >> /*
+
+
+
+/* <<< **************** | START OF CSS RESET | **************** >>> */
+
+@font-face
+{
+font-family: headingFont;
+src: url("_fonts/stentiga.ttf");
+}
+
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0.625em;
+	background: ;
+}
+
+h1 {
+	font: normal 1.8em titleFont, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	font: small-caps 1.6em titleFont, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+h3 {
+	font: small-caps 1.4em titleFont, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+h4 {
+	font: small-caps 1.3em titleFont, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+h5 {
+	font: small-caps 1em titleFont, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+h6 {
+	font: small-caps 0.6em titleFont, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+p {
+	font: normal 1.2em Arial, sans-serif;
+}
+
+a {
+	font: normal 1.4em titleFont, Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+
+/* <<< **************** | END OF CSS RESET | **************** >>> */
+
+
+
+/* <<< **************** | START OF GLOBAL STYLES | **************** >>> */
+
+header {
+	width: 60.000em;
+	margin: auto auto;
+	padding: ;
+	background: ;
+}
+
+nav {
+	
+}
+
+section:first-of-type {
+	width: 60.000em;
+	margin: auto auto;
+	padding: 0.625em 0.938em;
+	background: green;
+}
+
+section+section {
+	width: 60.000em;
+	margin: auto auto;
+	padding: 0.625em 0.938em;
+	background: yellow;
+	color: ;
+	text-shadow: ;
+	border: ;
+	border-radius: ;
+	box-shadow: ;
+}
+
+aside {
+	
+}
+
+footer {
+	width: 60.000em;
+	margin: auto auto;
+	padding: 0.625em 0.938em;
+	background: #A0A0A0;
+	color: #FFF;
+}
+
+
+/* <<< **************** | END OF  GLOBAL STYLES | **************** >>> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <<< **************** | START OF COMMENT BLOCK | **************** >>> */
+
+/* sample element
+
+elementName {
+	width: ;
+	margin: ;
+	padding: ;
+	background: ;
+	color: ;
+	text-shadow: ;
+	border: ;
+	border-radius: ;
+	box-shadow: ;
+}
+
+*/
+
+
+/* <<< **************** | END OF  COMMENT BLOCK | **************** >>> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
