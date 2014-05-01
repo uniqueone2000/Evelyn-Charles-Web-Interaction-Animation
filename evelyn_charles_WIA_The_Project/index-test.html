@@ -16,7 +16,10 @@
 <link rel="stylesheet" type="text/css" href="css/index-test.css"/>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.02329.js"></script>
+<script type="text/javascript" src="js/easeljs.js"></script>
+<script type="text/javascript" src="js/jquery.imgpreload.min.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="js/uniqueOneNet-Marquee.js"></script>
 </head>
 	<body>
 		<section id="headStripe">
@@ -24,7 +27,7 @@
 		</section>
 		<header>
 			<h1><a href="index-test.html">UniqueOne2000.net</a></h1>
-			<canvas>
+			<canvas id="logo-canvas">
 				
 			</canvas>
 			<section id="infoPanel">
@@ -46,73 +49,110 @@
 		<nav>
 			<ul>
 				<li><a href="index-test.html">Home</a></li>
-				<li><a href="departments.html">Departments</a></li>
+				<li><a href="index-test.html">Departments</a></li>
 				<li><a href="vendor-directory.html">Directory</a></li>
 				<li><a href="about.html">About Us</a></li>
-				<li><a href="index-test.html">Contact Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
 		<aside id="leaderBoard">
-			<section id="bannerRotator">
-				
-			</section>
+			<h2>Featured Merchants</h2>
+			<div class="marquee_container">
+
+			<section class="marquee_photos">
+
+				<section class="marquee_caption">
+
+					<section class="marquee_caption_content">
+						
+					</section>
+
+				</section>
+
+				<section class="marquee_nav">
+					
+				</section>
+
+			</section>				
+			</div> <!-- End of "marquee_container" div -->
 			<section id="mainCTA">
 				<h2>put an end to having to type in your favorite store’s website everytime you want to shop with them</h2>
 				<button id="submit">Learn More</button>
 			</section>
 		</aside>
+
+		<!--<aside class="marquee_panels">
+			<a href="http://www.jdoqocy.com/click-5547197-11635631" target="_blank" onmouseover="window.status='http://www.fila.com';return true;" onmouseout="window.status=' ';return true;">
+			<img src="http://www.tqlkg.com/image-5547197-11635631" width="468" height="60" alt="" border="0"/></a>
+			
+			<a href="http://www.dpbolvw.net/click-5547197-10876478" target="_blank" onmouseover="window.status='http://www.1800lighting.com';return true;" onmouseout="window.status=' ';return true;">
+			<img src="http://www.awltovhc.com/image-5547197-10876478" width="468" height="60" alt="Free Shipping on Orders over $49" border="0"/></a>
+
+			<a href="http://www.anrdoezrs.net/click-5547197-10460208" target="_blank" onmouseover="window.status='http://www.macmall.com';return true;" onmouseout="window.status=' ';return true;">
+			<img src="http://www.lduhtrp.net/image-5547197-10460208" width="468" height="60" alt="Blowout Deals at MacMall.com" border="0"/></a>
+
+			<a href="http://www.dpbolvw.net/click-5547197-10503834" target="_blank" onmouseover="window.status='http://www.josbank.com/webapp/wcs/stores/servlet/ReferralView?catalogId=10050&storeId=11001&productId=101954&p_id=2&link_id=1';return true;" onmouseout="window.status=' ';return true;">
+			<img src="http://www.tqlkg.com/image-5547197-10503834" width="468" height="60" alt="" border="0"/></a>
+
+			<a href="http://www.tkqlhce.com/click-5547197-10900619" target="_blank" onmouseover="window.status='http://mynuwaveoven.com';return true;" onmouseout="window.status=' ';return true;">
+			<img src="http://www.awltovhc.com/image-5547197-10900619" width="468" height="60" alt="" border="0"/></a>			
+		</aside> -->
+
 		<section id="mainContent">
 			<ul class="categories">
 				<li>
 				<h2>Automotive</h2>
 				<a href="http://www.tkqlhce.com/click-5547197-11426620" target="_blank" onmouseover="window.status='http://www.limos.com';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.tqlkg.com/image-5547197-11426620" width="125" height="125" alt="" border="0"/></a>
+				<img src="http://www.tqlkg.com/image-5547197-11426620" width="125" height="125" alt="" border="0"/></a>
 				</li>
 				<li>
 				<h2>Computers</h2>
 				<a href="http://www.jdoqocy.com/click-5547197-10785139" target="_blank" onmouseover="window.status='http://www.macmall.com';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.awltovhc.com/image-5547197-10785139" width="125" height="125" alt="New iPod Accessories from MacMall.com" border="0"/></a>
+				<img src="http://www.awltovhc.com/image-5547197-10785139" width="125" height="125" alt="New iPod Accessories from MacMall.com" border="0"/></a>
 				</li>
 				<li>
 				<h2>Food and Beverage</h2>
 				<a href="http://www.anrdoezrs.net/click-5547197-10374479" target="_blank" onmouseover="window.status='http://www.adagio.com';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.ftjcfx.com/image-5547197-10374479" width="125" height="125" alt="Tea Starter Set" border="0"/></a>
+				<img src="http://www.ftjcfx.com/image-5547197-10374479" width="125" height="125" alt="Tea Starter Set" border="0"/></a>
 				</li>
 				<li>
 				<h2>Jewelry</h2>
 				<a href="http://www.tkqlhce.com/click-5547197-10495774" target="_blank" onmouseover="window.status='http://www.titaniumkay.com';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.awltovhc.com/image-5547197-10495774" width="125" height="125" alt="Tungsten Men's Rings" border="0"/></a>
+				<img src="http://www.awltovhc.com/image-5547197-10495774" width="125" height="125" alt="Tungsten Men's Rings" border="0"/></a>
 				</li>
 				<li>
 				<h2>Electronics</h2>
 				<a href="http://www.kqzyfj.com/click-5547197-10542383" target="_blank" onmouseover="window.status='http://www.accessorygeeks.com';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.lduhtrp.net/image-5547197-10542383" width="125" height="125" alt="Accessory Geeks 125x125" border="0"/></a>
+				<img src="http://www.lduhtrp.net/image-5547197-10542383" width="125" height="125" alt="Accessory Geeks 125x125" border="0"/></a>
 				</li>
-				<li><h2>Finances</h2></li>
+				<li><h2>Phone Services</h2>
+				<a href="http://www.anrdoezrs.net/click-5547197-10686233" target="_blank" onmouseover="window.status='http://www.phone.com';return true;" onmouseout="window.status=' ';return true;">
+				<img src="http://www.lduhtrp.net/image-5547197-10686233" width="125" height="125" alt="125x125 Virtual Phone Service for Business" border="0"/></a>
+				</li>
 				<li>
 				<h2>Health and Wellness</h2>
 				<a href="http://www.anrdoezrs.net/click-5547197-10922590" target="_blank" onmouseover="window.status='http://www.trxtraining.com';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.awltovhc.com/image-5547197-10922590" width="125" height="125" alt="Free Shippin gon all orders $150+" border="0"/></a>
+				<img src="http://www.awltovhc.com/image-5547197-10922590" width="125" height="125" alt="Free Shippin gon all orders $150+" border="0"/></a>
 				</li>
 				<li>
 				<h2>Apparel</h2>
 				<a href="http://www.dpbolvw.net/click-5547197-11038805" target="_blank" onmouseover="window.status='http://www.josbank.com/webapp/wcs/stores/servlet/ReferralView?catalogId=10050&storeId=11001&productId=101954&p_id=2&link_id=1';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.awltovhc.com/image-5547197-11038805" width="125" height="125" alt="" border="0"/></a>
+				<img src="http://www.awltovhc.com/image-5547197-11038805" width="125" height="125" alt="" border="0"/></a>
 				</li>
 				<li>
 				<h2>Gifts and Novelties</h2>
 				<a href="http://www.jdoqocy.com/click-5547197-10967610" target="_blank" onmouseover="window.status='http://www.JustFlowers.com/affiliates';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.awltovhc.com/image-5547197-10967610" width="125" height="125" alt="" border="0"/></a>
+				<img src="http://www.awltovhc.com/image-5547197-10967610" width="125" height="125" alt="" border="0"/></a>
 				</li>
 				<li>
 				<h2>Sports and Outdoors</h2>
 				<a href="http://www.anrdoezrs.net/click-5547197-11493355" target="_blank" onmouseover="window.status='http://www.westmarine.com';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.tqlkg.com/image-5547197-11493355" width="125" height="125" alt="Shop West Marine!" border="0"/></a>
+				<img src="http://www.tqlkg.com/image-5547197-11493355" width="125" height="125" alt="Shop West Marine!" border="0"/></a>
 				</li>
 				<li>
 				<h2>Travel</h2>
 				<a href="http://www.tkqlhce.com/click-5547197-11742832" target="_blank" onmouseover="window.status='http://www.hotels.com';return true;" onmouseout="window.status=' ';return true;">
-<img src="http://www.ftjcfx.com/image-5547197-11742832" width="125" height="125" alt="" border="0"/></a>
+				<img src="http://www.ftjcfx.com/image-5547197-11742832" width="125" height="125" alt="" border="0"/></a>
 				</li>
 				<li><h2>Vendor Directory</h2>
 				<h3>With over 300 stores and counting your'e sure to find your favorites here</h3>
@@ -135,6 +175,7 @@
 				&copy 2014.</p></li>
 			</ul>			
 		</footer>
-		<script type="text/javascript" src="js/uniqueOneNetJs.js"></script>
+		<script type="text/javascript" src="js/uniqueOneNet-Viz.js"></script>
+		<script type="text/javascript" src="js/uniqueOneNet-Easel.js"></script>
 	</body>
 </html>

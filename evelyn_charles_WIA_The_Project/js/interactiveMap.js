@@ -21,7 +21,12 @@ $(document).ready(function(){
 		// dot test to department attribute
 		//alert($(this).attr('department'));
 
+		// changes the colors of the dots when clicked
+
+		// removed the "selected" class
 		$('a.dot').removeClass('selected');
+
+		// add the "selected" class to the dot that was clicked
 		$(this).addClass('selected');
 
 		var department = '.department_detail#' + $(this).attr('department');

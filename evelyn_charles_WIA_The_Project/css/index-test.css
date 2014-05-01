@@ -95,6 +95,7 @@ body {
 }
 
 #headStripe {
+	width: 58.300em;
 	background: #440612;
 	padding: 0.125em 0.650em;
 	color: #FCEE21;
@@ -110,12 +111,24 @@ header {
 	padding: 0;
 }
 
-canvas {
+#logo-canvas {
 	margin: 0.125em;
 	width: 309px;
+	background: #440612;
 	height: 167px;
-	outline: 0.063em dotted black;
+	/*outline: 0.063em dotted black;*/
 	float: left;
+}
+
+#contactCanvas {
+	width: 56.500em;
+	height: 29.625em;
+	margin: 0.250em auto;
+	padding: 0.625em;
+	/*background: #F7F7F7;*/
+	clear: both;
+	border: 0.063em solid #440612;
+	border-radius: 0.250em;
 }
 
 header h1 {
@@ -131,7 +144,7 @@ header h1 {
 }
 
 #infoPanel {
-	width: 39.700em;
+	width: 39.600em;
 	height: 165px;
 	margin: 0.125em;
 	padding: 0.125em; 
@@ -212,7 +225,7 @@ form {
 }
 
 nav {
-	width: 59.100em;
+	width: 59.000em;
 	margin: 0.125em auto;
 	padding: 0.250em;
 	background: #440612;
@@ -265,11 +278,12 @@ aside {
 }
 
 #bannerRotator {
-	margin: 0.250em auto;
-	width: 42.063em;
-	background: url("#") no-repeat;
+	margin: 0.250em 0.313em;
+	width: 43.750em;
+	height: 8.438em;
+	padding: 0.250em;
+	/*outline: 0.250em solid black;*/
 	float: left;
-	outline: 0.063em solid black;
 }
 
 #mainCTA {
@@ -278,7 +292,14 @@ aside {
 }
 
 #leaderBoard {
-	float: right;
+	width: 58.700em;
+	margin: 0.125em auto;
+	padding: 0.313em;
+	border: 0.063em solid #440612;
+	border-radius: 0.125em;
+	overflow: hidden;
+	/*float: right;
+	outline: 2px solid red;*/
 }
 
 #mainContent {
@@ -314,7 +335,7 @@ aside {
 	background: #900D26;
 	color: #FCEE21;
 	text-shadow: 0.125em 0.125em 0.125em #000;
-	border-radius: 0.250em 0.250em 0.125em 0.125em;
+	border-radius: 0.125em 0.125em 0 0;
 }
 
 #mainContent ul li:last-of-type {
@@ -329,6 +350,21 @@ aside {
 
 #mainContent ul li a {
 	margin: 0.250em;
+}
+
+#mainContent .vendorList {
+	width: 57.000em;
+	margin: auto auto;
+	padding: 0.313em;
+	overflow: hidden;
+	/*outline: 2px solid blue;*/
+}
+
+#mainContent .vendorList li {
+	width: 17.900em;
+	margin: 0 0.625em 0.625em 0.313em;
+	float: left;
+	/*outline: 2px solid red;*/
 }
 
 button {
@@ -462,18 +498,75 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7dd5b', end
 	display: none;
 }
 
-.vendorCategoryChart h4, h5 {
-	margin: 0 auto;
+.vendorCategoryChart h4 {
+	margin: 0.250em auto;
 	padding: 0.125em 0.250em;
+	background: none;
 	/*outline: 1px solid red;*/
-	text-align: left;
+	text-shadow: none;
+	border-radius: none
+}
+
+.vendorCategoryChart h5 {
+	margin: auto auto;
+	text-decoration: small-caps;
+	text-align: center;
 }
 
 .vendorCategoryChart p {
-	margin: 0 0 12px;
+	margin: 0.250em;
+	font: normal 0.9em Arial, Helvetica, sans-serif;
 }
 
+.marquee_panels {  
 
+}
+
+.marquee_container { 
+	position: relative;
+	margin: 0.250em 0.313em;
+	width: 43.750em;
+	height: 8.438em;
+	padding: 0.250em;
+	outline: 2px solid blue;
+	float: left;
+	overflow: hidden;
+}
+
+.marquee_photos { 
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+}
+
+.marquee_caption {
+	width: 468px;
+	margin: 0px;
+	padding: 15px 0px 10px 0px;
+	color: #fff;
+	position: absolute;
+	top: 340px;
+	left: 0px;
+	background: url(../images/template/marquee_caption.png) 0px 0px;
+}
+.marquee_caption_content { width: 410px; padding: 0px 0px 0px 25px; }
+.marquee_caption h2 { margin: 0px 0px 10px 0px; color: #fff; font-size: 1.25em; font-weight: normal; text-transform: uppercase; }
+.marquee_caption p { margin: 0px 0px 12px 0px; color: #fff; }
+.marquee_caption a { color: #ffc600; }
+.marquee_caption a:hover { color: #fff; }
+.marquee_flag { float: left; margin-right: 10px; }
+
+.marquee_nav { position: absolute; width: 240px; top: 310px; right: 20px; text-align: right; }
+.marquee_nav a {
+	display: inline-block;
+	width: 16px;
+	height: 25px;
+	margin-left: 15px;
+	background: url("../images/pagination-dots.png") no-repeat 0px 0px;
+	cursor: pointer;
+}
+.marquee_nav a:hover { background-position: -25px 0px; }
+.marquee_nav a.selected { background-position: -50px 0px; }
 
 footer {
 	margin: 0.125em 0;

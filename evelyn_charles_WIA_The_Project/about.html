@@ -15,7 +15,11 @@
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="css/index-test.css"/>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.02329.js"></script>
+<script type="text/javascript" src="js/easeljs.js"></script>
+<script type="text/javascript" src="js/jquery.imgpreload.min.js"></script>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="js/uniqueOneNet-Marquee.js"></script>
 </head>
 	<body>
 		<section id="headStripe">
@@ -23,7 +27,7 @@
 		</section>
 		<header>
 			<h1><a href="index-test.html">UniqueOne2000.net</a></h1>
-			<canvas>
+			<canvas id="logo-canvas">
 				
 			</canvas>
 			<section id="infoPanel">
@@ -45,10 +49,10 @@
 		<nav>
 			<ul>
 				<li><a href="index-test.html">Home</a></li>
-				<li><a href="departments.html">Departments</a></li>
+				<li><a href="index-test.html">Departments</a></li>
 				<li><a href="vendor-directory.html">Directory</a></li>
 				<li><a href="about.html">About Us</a></li>
-				<li><a href="index-test.html">Contact Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</nav>
 		<section id="mainContent" class="statistics">
@@ -61,29 +65,29 @@
 					<h2>Vendors By Category</h2>
 					<div class="vendorCategoryChart">
 
-						<a class="dot" style="top:104px; left:167px;" category= "MW" department= "For Him"></a>
+						<a class="dot" style="top:104px; left:167px;" category= "MW" department= "Mens"></a>
 						
-						<a class="dot" style="top:98px; left:30px;" category= "WW" department= "For Her"></a>
+						<a class="dot" style="top:98px; left:30px;" category= "WW" department= "Womens"></a>
 
-						<a class="dot" style="top:137px; left:94px;" category= "CH" department= "For Kids"></a>
+						<a class="dot" style="top:137px; left:94px;" category= "CH" department= "Kids"></a>
 
-						<a class="dot" style="top:65px; left:25px;" category= "RC" department= "Car Rental"></a>						
+						<a class="dot" style="top:65px; left:25px;" category= "RC" department= "Cars"></a>						
 
-						<a class="dot" style="top:95px; left:90px;" category= "HT" department= "Hotels"></a>
+						<a class="dot" style="top:63px; left:157px;" category= "HT" department= "Hotels"></a>
 
-						<a class="dot" style="top:63px; left:157px;" category= "FL" department= "Flights"></a>
+						<a class="dot" style="top:95px; left:90px;" category= "FL" department= "Flights"></a>
 
-						<a class="dot" style="top:40px; left:107px;" category= "PH" department= "Cellular"></a>
+						<a class="dot" style="top:40px; left:107px;" category= "PH" department= "Mobile"></a>
 
 						<form id="categoryForm" name="categoryForm" class="productForm" method="post" action="">
 							<select name="department" id="department">
-								<option value="MW">Men's Wear</option>
-								<option value="WW">Women's Wear</option>
-								<option value="CH">Children</option>
-								<option value="RC">Rental Cars</option>
+								<option value="MW">Mens</option>
+								<option value="WW">Womens</option>
+								<option value="CH">Kids</option>
+								<option value="RC">Cars</option>
 								<option value="HT">Hotels</option>
 								<option value="FL">Flights</option>
-								<option value="PH">Cellular</option>
+								<option value="PH">Mobile</option>
 								<option value="ALL" selected="selected">Show all Categories
 								</option>
 							</select>
@@ -95,82 +99,81 @@
 							</div> <!-- End of department_detail -->
 						</div> <!-- End of detail_container -->
 					</div> <!-- End of vendorCategoryChart -->
-					<div class="department_detail_container">
-	<!-- Departments -->
-	<div class="department_detail" id="mens_wear">
-		<img class="department_photo" src="../images/man-top.jpg" alt="Men's Wear" width="53" height="81" />
-		<div class="department_info">
-			<h2>Men's Wear</h2>
-			<h3>Apparel</h3>
-			<p>From suits and ties to shoes to Big and Tall we got it all.</p>
-		</div>
-	</div>
-	
-	<!-- Departments -->
-	<div class="department_detail" id="womens_wear">
-		<img class="department_photo" src="../images/woman-top.jpg" alt="Women's Wear" width="58" height="70" />
-		<div class="department_info">
-			<h2>Women's Wear</h2>
-			<h3>Apparel</h3>
-			<p>Designer names and fashion deal at reasonalble, competitive prices.</p>
-		</div>
-	</div>
-	
-	<!-- Departments -->
-	<div class="department_detail" id="childrens_wear">
-		<img class="department_photo" src="../images/boy-top.jpg" alt="Kid's Wear" width="62" height="70" />
-		<div class="department_info">
-			<h2>Kid's Gear</h2>
-			<h3>Apparel</h3>
-			<p>Find great quality, selection and prices for boys, girls, and babies.</p>
-		</div>
-	</div>
-	
-	<!-- Departments -->
-	<div class="department_detail" id="car_rental">
-		<img class="department_photo" src="../images/Car Silhouette-sm.jpg" alt="Car Rental" width="70" height="28" />
-		<div class="department_info">
-			<h2>Car Rental</h2>
-			<h3>Travel</h3>
-			<p>Deals from sites like Hotwire, Thrifty, Dollar and more...</p>
-		</div>
-	</div>
-	
-	<!-- Departments -->
-	<div class="department_detail" id="air_travel">
-		<img class="department_photo" src="../images/plane-silhouette.png" alt="Air Travel" width="145" height="124" />
-		<div class="department_info">
-			<h2>Flights</h2>
-			<h3>Travel</h3>
-			<p>Get there faster with some of the best in the business.</p>
-		</div>
-		<div class="clear_both"></div>
-	</div>
-	
-	<!-- Departments -->
-	<div class="department_detail" id="hotels">
-		<img class="department_photo" src="../images/black-white-metro-hotel-icon.png" alt="Hotels" width="75" height="75" />
-		<div class="department_info">
-			<h2>Hotels</h2>
-			<h3>Travel</h3>
-			<p>Getting settled into a new Departments is nevef a bother.</p>
-		</div>
-		<div class="clear_both"></div>
-	</div>
-	
-	<!-- Departments -->
-	<div class="department_detail" id="cellular">
-		<img class="department_photo" src="../images/Antenna-and-radio-waves-8631-svg.svg" alt="dallas" width="75" height="75" />
-		<div class="department_info">
-			<h2>Celluar</h2>
-			<h3>Telephones</h3>
-			<p>We've partnered with carriers like Verizon and AT&T for your moble needs.</p>
-		</div>
-		<div class="clear_both"></div>
-	</div>
-		</div>
-	
-</div>
+				<div class="department_detail_container">
+					<!-- Departments -->
+					<div class="department_detail" id="Mens">
+						<!-- <img class="department_photo" src="../images/man-top.jpg" alt="Men's Wear" width="53" height="81" /> -->
+						<div class="department_info">
+							<h2>Men's Wear</h2>
+							<h3>Apparel</h3>
+							<p>From suits and ties to shoes to Big and Tall we got it all.</p>
+						</div>
+					</div>
+					
+					<!-- Departments -->
+					<div class="department_detail" id="Womens">
+						<!-- <img class="department_photo" src="../images/woman-top.jpg" alt="Women's Wear" width="58" height="70" /> -->
+						<div class="department_info">
+							<h2>Women's Wear</h2>
+							<h3>Apparel</h3>
+							<p>Designer names and fashion deal at reasonalble, competitive prices.</p>
+						</div>
+					</div>
+					
+					<!-- Departments -->
+					<div class="department_detail" id="Kids">
+						<!-- <img class="department_photo" src="../images/boy-top.jpg" alt="Kid's Wear" width="62" height="70" /> -->
+						<div class="department_info">
+							<h2>Kid's Gear</h2>
+							<h3>Apparel</h3>
+							<p>Find great quality, selection and prices for boys, girls, and babies.</p>
+						</div>
+					</div>
+					
+					<!-- Departments -->
+					<div class="department_detail" id="Cars">
+						<!-- <img class="department_photo" src="../images/Car Silhouette-sm.jpg" alt="Car Rental" width="70" height="28" /> -->
+						<div class="department_info">
+							<h2>Car Rental</h2>
+							<h3>Travel</h3>
+							<p>Deals from sites like Hotwire, Thrifty, Dollar and more...</p>
+						</div>
+					</div>
+					
+					<!-- Departments -->
+					<div class="department_detail" id="Hotels">
+						<!-- <img class="department_photo" src="../images/black-white-metro-hotel-icon.png" alt="Air Travel" width="145" height="124" /> -->
+						<div class="department_info">
+							<h2>Flights</h2>
+							<h3>Travel</h3>
+							<p>Finding the best hotel rates for you is never a bother.</p>
+						</div>
+						<div class="clear_both"></div>
+					</div>
+					
+					<!-- Departments -->
+					<div class="department_detail" id="Flights">
+						<!--<img class="department_photo" src="../images/plane-silhouette.png" alt="Hotels" width="75" height="75" /> -->
+						<div class="department_info">
+							<h2>Hotels</h2>
+							<h3>Travel</h3>
+							<p>Get there faster with some of the best airlines in the business.</p>
+						</div>
+						<div class="clear_both"></div>
+					</div>
+					
+					<!-- Departments -->
+					<div class="department_detail" id="Mobile">
+						<!-- <img class="department_photo" src="../images/Antenna-and-radio-waves-8631-svg.svg" alt="dallas" width="75" height="75" /> -->
+						<div class="department_info">
+							<h2>Celluar</h2>
+							<h3>Telephones</h3>
+							<p>We've partnered with carriers like Verizon, Sprint and AT&T for your mobile needs.</p>
+						</div>
+						<div class="clear_both"></div>
+					</div>	
+
+				</div> <!-- End of department_detail_container -->
 				</article>
 				<!-- 
 				<article class="chart">
@@ -197,7 +200,7 @@
 				&copy 2014.</p></li>
 			</ul>			
 		</footer>
-		<script type="text/javascript" src="js/uniqueOneNetJs.js"></script>
-		<script type="text/javascript" src="js/interactiveMap.js"></script>
+		<script type="text/javascript" src="js/uniqueOneNet-Viz.js"></script>
+		<script type="text/javascript" src="js/uniqueOneNet-Easel.js"></script>
 	</body>
 </html>
