@@ -56,7 +56,7 @@ Reminder - set the style first then draw.
 
 					} else {
 					// Insert a polyfill here
-
+					"Your Browser Does Not Support the HTML5 Canvas Element"
 					}
 			}
 			
@@ -104,7 +104,7 @@ Use the arc method
 
 					} else {
 					// Insert a polyfill here
-
+					"Your Browser Does Not Support the HTML5 Canvas Element"
 					}
 			}
 			
@@ -158,7 +158,7 @@ Height and width and color are up to you.
 
 					} else {
 					// Insert a polyfill here
-
+					"Your Browser Does Not Support the HTML5 Canvas Element"
 					}
 			}
 			
@@ -226,7 +226,7 @@ Do not overlap any other object.
 
 					} else {
 					// Insert a polyfill here
-
+					"Your Browser Does Not Support the HTML5 Canvas Element"
 					}
 			}
 			
@@ -265,7 +265,7 @@ Draw text into your canvas.  It can said whatever you would like in any color.
 
 					} else {
 					// Insert a polyfill here
-
+					"Your Browser Does Not Support the HTML5 Canvas Element"
 					}
 			}
 			
@@ -286,32 +286,27 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 //Draw images here
 
-// Modernizr Test for "Canvas6"
-	if(Modernizr.canvas){
-		
-		var myCanvas = document.getElementById("Canvas1");
-
-			if(myCanvas && myCanvas.getContext){
-
-				var ctx6 = myCanvas.getContext("2d");
-				var ctx6b = myCanvas.getContext("2d");
-				var ctx6c = myCanvas.getContext("2d");
-
-					if(ctx6 && ctx6b && ctx6c){
-
-						//Create a variable to hold our image
-						var srcImg = document.getElementById("image1");	
-						
-						// Actual Size
-						ctx6.drawImage(srcImg, 0,0);
-
-					} else {
-					// Insert a polyfill here
-
-					}
-			}
+	// Modernizr Test for "Canvas6"
+		if(Modernizr.canvas){
 			
-	}		
+			function draw_img(){
+				var canvas_img = document.getElementById('Canvas6');
+				var canvas_img_ctx = canvas_img.getContext('2d');
+				var width = canvas_img.width/2;
+				var height = 50;
+
+				put_img = new Image();
+				put_img.src = 'image/logo.png';
+				put_img.onload = function(){
+					canvas_img_ctx.drawImage(put_img,0,0,width,height);
+				} 
+			};
+			draw_img();
+			
+
+				
+				
+		}		
 
 /*******************************************
 PART 7
@@ -326,7 +321,61 @@ You must use at least 3 different methods.
 
 // Draw scene here
 
+	// Modernizr Test for "Canvas7"
+	if(Modernizr.canvas){
+		
+		var myCanvas = document.getElementById("Canvas7");
 
+			if(myCanvas && myCanvas.getContext){
+
+				var ctx7 = myCanvas.getContext("2d");
+				var ctx7b = myCanvas.getContext("2d");
+				var ctx7c = myCanvas.getContext("2d");
+				var ctx7d = myCanvas.getContext("2d");
+
+					if(ctx7 && ctx7b && ctx7c){
+
+					var radians=(Math.PI/180)*20;
+					ctx7.translate(ctx7.canvas.width/4, ctx7.canvas.height/4);
+
+					for(var degrees=0; degrees<=360; degrees+=20){
+							ctx7.beginPath();
+							ctx7.moveTo(0,0 ); 
+							ctx7.lineTo(50, 0);
+							ctx7.stroke();
+							ctx7.rotate(radians);
+							}
+
+					var degrees = 360;
+					var radians2 = (degrees/180)*Math.PI;
+						
+					ctx7b.beginPath();
+					ctx7b.arc(1, 0, 30, 0, radians2);
+					ctx7b.fillStyle = "yellow";
+					ctx7b.fill();
+					ctx7b.stroke();
+
+					
+					var textString2 = "Life is Grand!";
+			
+						//Style the font
+						ctx7c.font = "16pt Helvetica";
+						ctx7c.fillStyle = "red";
+						ctx7c.lineWidth = .4;
+						ctx7c.strokeStyle = "rgba(255, 255, 0, 1)";			
+						ctx7c.fillText(textString2, 25, 80);
+						ctx7c.strokeText(textString2, 25, 80);
+
+
+					} else {
+					// Insert a polyfill here
+					"Your Browser Does Not Support the HTML5 Canvas Element"
+					}
+			}
+			
+	}		
 
 }
+
+
 				
