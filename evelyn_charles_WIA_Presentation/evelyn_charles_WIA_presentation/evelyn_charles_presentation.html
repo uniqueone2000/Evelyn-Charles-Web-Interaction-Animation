@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/styles/sunburst.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+                <!--<section> go here-->
+        		
+            	<section>
+            		<h1>jQuery Tutorial</h1>
+            		<h2>BlueImp Gallery</h2>
+            		<h3>Instructor:</h3>
+            		<h3>Charles Evelyn</h3>
+            	</section>
+
+            	<section>
+            		<section>
+            			<h2>Instructor Greeting</h2>
+            			<p><strong>Topic:</strong>&nbsp; jQuery-Image-Gallery Demo</p>
+            		</section>
+            		<section>
+            			<h2>What is the blueimp jQuery-Image-Gallery</h2>
+            			<p>jQuery Image Gallery is an extension to the Dialog component of jQuery UI, to ease navigation between a set of gallery images. It features mouse and keyboard navigation, transition effects, fullscreen mode and slideshow functionality.
+            			</p>
+						<a href="http://blueimp.github.io/jQuery-Image-Gallery/">jQuery-Image-Gallery</a>
+            		</section>
+            	</section>
+				<section>
+					<h2>Features</h2>
+					<ul>
+							<li>jQuery</li>
+							<li>Use of jQuery UI Widgets</li>
+							<li>Google CDN (Content Delivery Network)</li>
+						</ul>
+				</section>
+				<section>
+            		<h2>Project</h2>
+            		
+            	</section>
+
+            	<section>
+            		<section>
+            			<h2>Client Approval</h2>
+            			<p>Upon client approval I redesigned their current site (development stage). </p>
+            		</section>
+            		<section>
+            			<h2>Image Gallery</h2>
+            			<h3>Current State</h3>
+            			<img src="images/current-state.png">
+            			
+            		</section>
+            		<section>
+            			<h2>Image Gallery</h2>
+            			<h3>Development State</h3>
+            			<img src="images/develop-state.png">
+            		</section>
+            	</section>
+
+            	<section>
+            		<h2> Presentation Scope</h2>
+            		<p>Modify the image gallery with blueimp jQuery-Image-Gallery
+            		in order to present the visitor with a richer user experience.
+            		</p>
+            	</section>
+					
+            	<section>
+            		<h2>Gallery code block </h2>
+            		<h3>HTML</h3>
+            		<pre><code>
+						&lt;div id="links"&gt; 
+						&lt;a href="images/babyshower.jpg" title="Baby Shower" data-dialog&gt; 
+						&lt;img src="images/babyshower.jpg" alt="Baby Shower"&gt; &lt;/a&gt; 
+						&lt;a href="images/blackcupcake.png" title="Black Pearl" data-dialog&gt; 
+						&lt;img src="images/blackcupcake.png" alt="Black Pearl"&gt; 
+						&lt;/a&gt;
+						 &lt;a href="images/bowsandfur.jpg" title="Flowers and Fur" data-dialog&gt;
+						  &lt;img src="images/bowsandfur.jpg" alt="Flowers and Fur"&gt; 
+						  &lt;/a&gt; 
+						  &lt;a href="images/daddycupcakes.jpg" title="Father's Day" data-dialog&gt; 
+						  &lt;img src="images/daddycupcakes.jpg" alt="Father's Day"&gt; 
+						  &lt;/a&gt; 
+						  &lt;a href="images/fishyfishy.jpg" title="Fishy-Fishy" data-dialog&gt; 
+						  &lt;img src="images/fishyfishy.jpg" alt="Fishy-Fishy"&gt; 
+						  &lt;/a&gt; 
+						  &lt;a href="images/grayandblack.jpg" title="Gray and Black Cupcakes" data-dialog&gt; 
+						  &lt;img src="images/grayandblack.jpg" alt="Gray and Black Cupcakes"&gt; 
+						  &lt;/a&gt; 
+						  &lt;a href="images/grayandblackparty.jpg" title="Gray and Black Party" data-dialog&gt; 
+						  &lt;img src="images/grayandblackparty.jpg" alt="Gray and Black Party"&gt; 
+						  &lt;/a&gt; 
+						  &lt;a href="images/happycakes.jpg" title="Smiley Face Cupcakes" data-dialog&gt; 
+						  &lt;img src="images/happycakes.jpg" alt="Smiley Face Cupcakes"&gt; 
+						  &lt;/a&gt; 
+						  &lt;a href="images/pineapplesandcream.jpg" title="Pineapples and Cream" data-dialog&gt; 
+						  &lt;img src="images/pineapplesandcream.jpg" alt="Pineapples and Cream"&gt; 
+						  &lt;/a&gt; 
+						  &lt;a href="images/pinkbutterfly.jpg" title="Pink Butterfly" data-dialog&gt; 
+						  &lt;img src="images/pinkbutterfly.jpg" alt="Pink Butterfly"&gt; 
+						  &lt;/a&gt; 
+						  &lt;a href="images/strawberriesandcream.jpg" title="Strawberries and Cream" data-dialog&gt;
+						   &lt;img src="images/strawberriesandcream.jpg" alt="Strawberries and Cream"&gt; 
+						   &lt;/a&gt; 
+						   &lt;/div&gt; &lt;!-- End of links --&gt; 
+						    
+						   &lt;!-- Begin dialog widget --&gt; 
+						   &lt;div id="blueimp-gallery-dialog" data-show="fade" data-hide="fade"&gt; 
+						    
+						   &lt;!-- Begin gallery widget --&gt;
+						    &lt;div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls"&gt; 
+						    &lt;div class="slides"&gt;&lt;/div&gt; 
+						    &lt;a class="prev"&gt;&lsaquo;&lt;/a&gt; 
+						    &lt;a class="next"&gt;&rsaquo;&lt;/a&gt; 
+						    &lt;a class="play-pause"&gt;&lt;/a&gt; 
+						    &lt;/div&gt; &lt;!-- End of blueimp-gallery-controls --&gt;>
+							&lt;/div&gt; &lt;!-- End of blueimp-gallery-dialog --&gt;
+						</code></pre>
+            	</section>
+
+            	<section>
+            		<h2>Link to JS Scripts (header)</h2>
+            		<pre><code>
+            				&lt;script type="text/javascript" src="js/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+            				&lt;script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"&gt;&lt;/script&gt;
+            				&lt;link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" id="theme"&gt;
+            				&lt;!-- Modernizr Script Follows--&gt;
+            				&lt;script src="includes/modernizr.js"&gt;&lt;/script&gt;
+							&lt;link rel="stylesheet" type="text/css" href="css/cakeCravings.css"/&gt;
+							&lt;link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"&gt;
+            			</code></pre>
+            	</section>
+
+            	<section>
+            		<h2>Links to CDNs (body)</h2>
+            		<pre><code>
+            			&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script&gt; 
+            			&lt;script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"&gt;&lt;/script&gt; 
+            			&lt;script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"&gt;&lt;/script&gt; 
+            			&lt;script src="js/jquery.image-gallery.min.js"&gt;&lt;/script&gt;
+            		</code></pre>
+            	</section>
+
+            	<section>
+            		<h2>blueimp script file</h2>
+            		<pre><code>
+/* jQuery Image Gallery plugin 3.0.0
+https://github.com/blueimp/jQuery-Image-Gallery
+Copyright 2013, Sebastian Tschan
+https://blueimp.net
+Licensed under the MIT license:
+http://www.opensource.org/licenses/MIT
+jslint unparam: true global define, window, document 
+*/
+    (function (factory) {
+        'use strict';
+        	if (typeof define === 'function' &amp;&amp; define.amd) 
+        	{ define([
+            	'jquery',
+            	'./blueimp-gallery'
+            	], factory);
+	            } else {
+	            	factory(
+	            	window.jQuery,
+	            	window.blueimp.Gallery
+	            	);
+	            }
+            }
+            (function ($, Gallery) {
+            	'use strict';</p>
+				/*Global click handler to open links with data-dialog attribute
+				in the Gallery lightbox: 
+				*/<br />
+				$(document).on('click', '[data-dialog]', function (event) {
+				
+				// Get the widget id from the data-dialog attribute:
+				
+				var id = $(this).data('dialog'),
+				widget = $(id),
+				dialogWidget = (widget.length &amp;&amp; widget) || $('#blueimp-gallery-dialog'),
+				galleryWidget = dialogWidget.find('.blueimp-gallery'),
+				dialogInitialized = false,
+				
+				// Initialize the dialog with custom options
+				// from data-attributes on the dialog widget:
+				
+				dialogOptions = $.extend({
+					  	modal: true,
+					  	width: 'auto'
+					  	}, 
+				
+				dialogWidget.data()),
+				galleryOptions = $.extend({
+						toggleControlsOnReturn: true,
+					  	toggleSlideshowOnSpace: true,
+					  	enableKeyboardNavigation: true,
+					  	startSlideshow: false
+				},
+						
+				// Initialize the Gallery with custom options
+				// from data-attributes on the Gallery widget:
+				
+				galleryWidget.data(),
+							{container: galleryWidget[0],
+							index: this,
+							event: event,
+							carousel: true,
+							onslide: function (index, slide) {
+								
+								var gallery = this,
+								title = slide.firstChild.title;
+
+								if (dialogInitialized) {
+									dialogWidget.dialog('option', 'title', title);
+									} else {
+									dialogOptions.title = title;
+									dialogWidget.data('gallery', this) .one('dialogclose', function () {
+									$(this).dialog('destroy');
+									gallery.handleClose();
+								})
+								.one('dialogresize', function () {
+									galleryWidget.css('width', 'auto');
+								})
+								.dialog(dialogOptions)
+								.css({
+									visibility: 'visible',
+									height: 'auto',
+									overflow: 'visible'
+								});
+								dialogInitialized = true;
+								}
+								dialogWidget.trigger('slide', arguments);
+								},
+								onslideend: function () {
+									dialogWidget.trigger('slideend', arguments);
+								},
+								onslidecomplete: function () {
+									dialogWidget.trigger('slidecomplete', arguments);
+									}
+								}),
+								
+								// Select all links with the same data-dialog attribute:
+								links = $('[data-dialog="' + id + '"]'),
+								setGalleryWidgetDimensions = function () {
+									
+								var width = $(window).width() - (dialogOptions.offsetWidth || 100),
+								height = $(window).height() - (dialogOptions.offsetHeight || 150),
+								
+								// blueimp gallery carousel ratio (16/9)
+								// to viewport ratio:
+								
+								ratio = ((16 / 9) / (width / height));
+									if (ratio &lt; 1) {
+										width = width * ratio;
+									}
+										galleryWidget.css('width', width);
+									};
+
+									if (galleryOptions.filter) {
+										links = links.filter(galleryOptions.filter);
+									}
+									
+									// The Gallery only renders if the parent element is displayed,
+									// so we cannot use "display:none", but the following workaround:
+											
+									dialogWidget.css({
+										visibility: 'hidden',
+										height: 0,
+										overflow: 'hidden'
+									});
+											
+									setGalleryWidgetDimensions();
+										return new Gallery(links, galleryOptions);
+									});
+            		</code></pre>
+            	</section>
+
+            	<section>
+            		<h2>Demonstration:</h2>
+            		<a href="gallery.html">Gallery Example</a>
+            	</section>
+            	<section>
+            		<h2>Hope you liked the demo.</h2>
+            		<h3>Till next time...</h3>
+            	</section>
+
+    		
+                	
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

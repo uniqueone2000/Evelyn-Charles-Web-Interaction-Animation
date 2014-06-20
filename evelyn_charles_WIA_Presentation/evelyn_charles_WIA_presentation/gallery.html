@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Cravings Created... and Satisfied!</title>
+<!--[if lt IE 9]>
+<script src="/profile/scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/south-street/jquery-ui.css" id="theme">
+<!-- Modernizr Script Follows-->
+<script src="includes/modernizr.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/cakeCravings.css"/>
+<link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/> -->
+<!--<script type="text/javascript">
+      $(document).ready(function(){
+          // target the "fancybox" class
+          $(".fancybox").fancybox();
+
+      });
+  </script>
+-->
+
+
+</head>
+	<body>
+		<aside id="upperNavBar">
+			<h1 class="specialHeading1">Express your love for Dad with a special cake.</h1>
+			<button class="orderBtn">Order Now</button>
+		</aside>
+		<header>
+			<h1 class="specialHeading1">Sweet Satisfaction Gallery</h1>
+			<aside id="connectBox">
+				<!-- <h2>Connect</h2> -->
+				<a id="facebook" href="http://www.facebook.com/share.php?u=http://4cakecravings.com/" target="_blank"></a>
+				<a id="linkedIn" href="http://www.linkedin.com/shareArticle?mini=true&url=http://4cakecravings.com/" target="_blank"></a>
+				<a id="googlePlus" href="https://plus.google.com/share?url=http://4cakecravings.com/" target="_blank"></a>
+				<a id="twitter" href="http://www.twitter.com/home?status=http://4cakecravings.com/" target="_blank"></a>
+			</aside>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menus.html">Menu</a></li>
+				<li><a href="gallery.html">Gallery</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="specialord.html">Orders</a></li>
+			</ul>
+		</nav>
+		<section id="mainContent" class="cakeGallery">
+			<!-- <div id="splashBanner"></div>
+			<aside id="connectBox"></aside>
+			<article id="occasions"></article>
+			<article id="inspirations"></article> -->
+			<div id="links">
+				<a href="images/babyshower.jpg" title="Baby Shower" data-dialog>
+					<img src="images/babyshower.jpg" alt="Baby Shower">
+				</a>
+				<a href="images/blackcupcake.png" title="Black Pearl" data-dialog>
+					<img src="images/blackcupcake.png" alt="Black Pearl">
+				</a>
+				<a href="images/bowsandfur.jpg" title="Flowers and Fur" data-dialog>
+					<img src="images/bowsandfur.jpg" alt="Flowers and Fur">
+				</a>
+				<a href="images/daddycupcakes.jpg" title="Father's Day" data-dialog>
+					<img src="images/daddycupcakes.jpg" alt="Father's Day">
+				</a>
+				<a href="images/fishyfishy.jpg" title="Fishy-Fishy" data-dialog>
+					<img src="images/fishyfishy.jpg" alt="Fishy-Fishy">
+				</a>
+				<a href="images/grayandblack.jpg" title="Gray and Black Cupcakes" data-dialog>
+					<img src="images/grayandblack.jpg" alt="Gray and Black Cupcakes">
+				</a>
+				<a href="images/grayandblackparty.jpg" title="Gray and Black Party" data-dialog>
+					<img src="images/grayandblackparty.jpg" alt="Gray and Black Party">
+				</a>
+				<a href="images/happycakes.jpg" title="Smiley Face Cupcakes" data-dialog>
+					<img src="images/happycakes.jpg" alt="Smiley Face Cupcakes">
+				</a>
+				<a href="images/pineapplesandcream.jpg" title="Pineapples and Cream" data-dialog>
+					<img src="images/pineapplesandcream.jpg" alt="Pineapples and Cream">
+				</a>
+				<a href="images/pinkbutterfly.jpg" title="Pink Butterfly" data-dialog>
+					<img src="images/pinkbutterfly.jpg" alt="Pink Butterfly">
+				</a>
+				<a href="images/strawberriesandcream.jpg" title="Strawberries and Cream" data-dialog>
+					<img src="images/strawberriesandcream.jpg" alt="Strawberries and Cream">
+				</a>
+			</div> <!-- End of links -->
+					
+			<!-- Begin dialog widget -->
+			<div id="blueimp-gallery-dialog" data-show="fade" data-hide="fade">
+					    
+				<!-- Begin gallery widget  -->
+				<div class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+					<div class="slides"></div>
+						<a class="prev">‹</a>
+						<a class="next">›</a>
+						<a class="play-pause"></a>
+					</div> <!-- End of blueimp-gallery-controls -->
+
+				</div> <!-- End of blueimp-gallery-dialog -->
+			
+			<!-- USED FOR FANCYBOX UI
+			<a class="fancybox" rel="group1"href="images/babyshower.jpg" title="Baby Shower">
+				<img src="images/babyshower.jpg" alt="Baby Shower">
+			</a>
+			<a class="fancybox" rel="group1" href="images/blackcupcake.png" title="Black Cup Cake">
+				<img src="images/blackcupcake.png" alt="Black Cup Cake">
+			</a>
+			<a class="fancybox" rel="group1" href="images/bowsandfur.jpg" title="Bows and Fur">
+				<img src="images/bowsandfur.jpg" alt="Bows and Fur">
+			</a>
+			<a class="fancybox" rel="group1" href="images/daddycupcakes.jpg" title="Father's Day">
+				<img src="images/daddycupcakes.jpg" alt="Father's Day">
+			</a>
+			<a class="fancybox" rel="group1" href="images/fishyfishy.jpg" title="Fishy-Fishy">
+				<img src="images/fishyfishy.jpg" alt="Fishy-Fishy">
+			</a>
+			<a class="fancybox" rel="group1" href="images/grayandblack.jpg" title="Gray and Black Cupcakes">
+				<img src="images/grayandblack.jpg" alt="Gray and Black Cupcakes">
+			</a>
+			<a class="fancybox" rel="group1" href="images/grayandblackparty.jpg" title="Gray and Black Party">
+				<img src="images/grayandblackparty.jpg" alt="Gray and Black Party">
+			</a>
+			<a class="fancybox" rel="group1" href="images/happycakes.jpg" title="Smiley Face Cupcakes">
+				<img src="images/happycakes.jpg" alt="Smiley Face Cupcakes">
+			</a>
+			<a class="fancybox" rel="group1" href="images/pineapplesandcream.jpg" title="Pineapples and Cream">
+				<img src="images/pineapplesandcream.jpg" alt="Pineapples and Cream">
+			</a>
+			<a class="fancybox" rel="group1" href="images/pinkbutterfly.jpg" title="Pink Butterfly">
+				<img src="images/pinkbutterfly.jpg" alt="Pink Butterfly">
+			</a>
+			<a class="fancybox" rel="group1" href="images/strawberriesandcream.jpg" title="Strawberries and Cream">
+				<img src="images/strawberriesandcream.jpg" alt="Strawberries and Cream">
+			</a> -->
+		</section>
+
+		<footer>
+			<ul id="footerNav">
+				<li><a href="index.html">Home</a> </li>
+				<li>&nbsp;<a href="menus.html">Menu</a></li>
+				<li>&nbsp;<a href="gallery.html">Gallery</a></li>
+				<li>&nbsp;<a href="about.html">About Us</a></li>
+				<li>&nbsp;<a href="contact.html">Contact</a></li>
+				<li>&nbsp;<a href="specialord.html">Orders</a></li>
+			</ul>
+			<aside id="cravingsLogo">
+				<h2>4CakeCravings.com</h2>
+				<ul id="cravings">
+					<li>Brought to you by Sweet Satisfaction</li>
+					<li>Shari Gross</li>
+					<li>Owner/Operator</li>
+					<li>&copy Copyright 2014</li>
+				</ul>
+			</aside>
+			<aside id="NDWDSLogo">
+				<h3>Powered By:</h3>
+				<ul id="ndwds">
+					<li><h2>Next Dimension Web Design Studios</h2></li>
+					<li>A subsidiary of UniqueOne Networks, LLC</li>
+					<li>&copy Copyright 2014</li>
+				</ul>
+			</aside>
+		</footer>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+		<script src="js/jquery.image-gallery.js"></script>		
+	</body>
+</html>
